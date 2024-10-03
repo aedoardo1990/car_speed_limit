@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*Toggle button*/
+.toggle-btn {
+  background-color: #b7b9ba;
+  border: 1px solid #aaa;
+  border-radius: 99px;
+  width: 42px;
+  height: 17px;
+  transition: background-color 0.1s ease, border-color 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+}
+
+.toggle-btn .thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 99px;
+  transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.toggled-btn:hover{
+  border-color: #6f6f6f;
+}
+
+.toggle-btn.toggle-btn.toggled .thumb{
+  left: calc(50px - 25px);
+}
+
+/*main div in App.js*/
+.mainDiv{
+  text-align: center;
+  margin-top: 30px;
+  min-height: 100vh;
+}
+
+/*carIcon*/
+.rowContainer {
+  display: inline-block;
+  width: 120px;
+}
+
+.column {
+  display: table-cell;
+  font-weight: bold;
+  padding: 5px;
+  width: 40px;
+}
+
+.SpeedDisplay{
+  border: 1px solid;
+  border-radius: 50%;
+  padding:10px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.SpeedDisplay-center{
+  margin-top: 30px;
+}
+
+.speed-under-100 {
+  border: white 17px solid;
+  box-shadow: 1px 1px 10px rgba(92, 90, 90, 0.748);
+}
+
+.speed-above-100 {
+  border: red 17px solid;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+}
